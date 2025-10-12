@@ -19,7 +19,33 @@ In your newly forked repository, navigate to the `sites.json` file. Click the pe
 ```json
 {
   "sites": [
-    "https://your-first-app.onrender.com",
-    "https://your-second-app.onrender.com"
+    "https://my-awesome-portfolio.onrender.com",
+    "https://my-cool-api.onrender.com/health-check",
+    "https://another-project.herokuapp.com"
   ]
 }
+```
+
+After adding your URLs, scroll down and click the green "Commit changes..." button.
+
+**3. Enable and Run the Workflow**
+
+GitHub Actions are disabled on forks by default for security. You need to enable them and run the workflow once to confirm your setup.
+
+Go to the "Actions" tab of your repository.
+
+Click the big green button that says "I understand my workflows, go ahead and enable them."
+
+Enable Actions
+
+After enabling, stay on the Actions page. In the left sidebar, click on the workflow named "Keep Sites Awake".
+
+Click the "Run workflow" dropdown button that appears on the right, then click the green "Run workflow" button inside it.
+
+**4. Verify It's Working**
+
+A new workflow run will appear in the list. Click on its title to see the details. Then, click on the ping job.
+
+You should see logs with a ✅ SUCCESS message for each of your URLs.
+
+That's it! Your uptime pinger is now active and will run automatically every 14 minutes to keep your sites online.

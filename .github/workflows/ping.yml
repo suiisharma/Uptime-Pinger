@@ -4,7 +4,7 @@ on:
   schedule:
     # Runs every 14 minutes to prevent free services from sleeping.
     # Feel free to change the schedule if needed.
-    - cron: '*/14 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     # Allows you to run this workflow manually from the Actions tab.
 
